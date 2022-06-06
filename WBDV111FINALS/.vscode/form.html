@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+    <link rel="icon" type="image/png" href="/images/brand.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        <a href="home.html"><img src="images/berserkredlogo.png" /></a>
+      </div>
+      <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form.html">My Account</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+
+    <div class="form">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required />
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input
+          type="submit"
+          value="Login"
+          onclick="location.href='home.html';"
+        />
+        <div class="signup_link">Not a member? <a href="#">Signup</a></div>
+      </form>
+    </div>
+
+    <video width="750" height="500" controls autoplay loop muted>
+      <source src="/images/berserk.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!--   FOOTER      -->
+    <div class="footer">
+      <p>BSCS 1-YB-1 | Turqueza (Solo)</p>
+    </div>
+  </body>
+</html>

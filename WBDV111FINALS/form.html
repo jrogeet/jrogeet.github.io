@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+    <link rel="icon" type="image/png" href="/images/brand.png" />
+    <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        <a href="home.html"><img src="images/berserkredlogo.png" /></a>
+      </div>
+      <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form.html">My Account</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+
+    <video width="750" height="500" controls autoplay loop muted>
+      <source src="/images/berserk.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator" />
+              </div>
+
+              <form id="LoginForm">
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot Password</a>
+              </form>
+
+              <form id="RegForm">
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--   FOOTER      -->
+    <div class="footer">
+      <p>BSCS 1-YB-1 | Turqueza (Solo)</p>
+    </div>
+  </body>
+
+    <!---------JS for Toggle Form-------->
+
+<script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+  </script>
+</html>

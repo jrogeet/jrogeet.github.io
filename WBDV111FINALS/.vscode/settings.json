@@ -1,0 +1,6 @@
+{
+  "liveServer.settings.port": 5502,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
