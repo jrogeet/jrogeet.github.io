@@ -119,13 +119,13 @@ nav .links li:nth-child(2) {
 }
 nav .icon-burger {
   display: none;
-  position: absolute;
-  right: 5%;
+  position: sticky;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
 nav .icon-burger .line {
-  width: 30px;
+  width: 7.8%;
   height: 5px;
   background-color: #fff;
   margin: 5px;
