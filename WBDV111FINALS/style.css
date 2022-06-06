@@ -1,6 +1,6 @@
 @font-face {
   font-family: akira;
-  src: url(fonts/Akira Expanded Demo.otf);
+  src: url(fonts/AkiraExpandedDemo.otf);
 }
 @font-face {
   font-family: lemonmilk;
@@ -24,7 +24,7 @@
 }
 @font-face {
   font-family: tsblock;
-  src: url(fonts/TS\ Block\ Bold.ttf);
+  src: url(fonts/TSBlockBold.ttf);
 }
 html {
   --scrollbarBG: transparent;
