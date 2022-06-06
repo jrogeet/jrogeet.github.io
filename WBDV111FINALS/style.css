@@ -71,6 +71,7 @@ nav {
   font-family: "Montserrat", sans-serif;
   padding: 0 5%;
   height: 100px;
+  position: relative;
 }
 nav .logo {
   position: absolute;
@@ -131,7 +132,7 @@ nav .icon-burger .line {
   height: 5px;
   background-color: #fff;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -139,6 +140,7 @@ nav .icon-burger .line {
 body .main_content {
   width: 100%;
   position: absolute;
+  min-height: 460px;
 }
 
 .main_content .info {
@@ -450,11 +452,16 @@ video {
   body {
     overflow-y: visible;
   }
+  nav {
+    position: sticky;
+    z-index: 11;
+  }
   nav .logo {
     float: none;
     width: auto;
     justify-content: center;
     z-index: 11;
+    margin-left: -3%;
   }
   nav .links {
     display: flex;
@@ -477,7 +484,7 @@ video {
     z-index: 11;
   }
   nav .links a {
-    font-size: 18px;
+    font-size: 140%;
   }
   nav :checked ~ .links {
     bottom: 0;
@@ -485,6 +492,7 @@ video {
   nav .icon-burger {
     display: block;
     top: 7%;
+    max-width: 90%;
   }
   nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
@@ -555,6 +563,7 @@ video {
 
   .gif {
     margin-left: 20%;
+    margin-top: 10%;
   }
 
   .main_content .info {
@@ -566,7 +575,7 @@ video {
   .info h1 {
     margin-left: 25%;
     font-size: 150%;
-    margin-top: -5%;
+    margin-top: -20%;
   }
   h1 span {
     font-size: 350%;
@@ -575,7 +584,7 @@ video {
     display: inline;
   }
   .bgtext h1 {
-    margin-top: 26%;
+    margin-top: 25%;
   }
 
   .galleryh h1 {
@@ -642,6 +651,7 @@ video {
     margin-top: 105%;
     margin-left: 11%;
     margin-bottom: 20%;
+    padding-bottom: 15%;
     width: 80%;
     height: 40%;
   }
