@@ -34,8 +34,10 @@ html {
 body::-webkit-scrollbar {
   width: 6px;
 }
+
 body {
   scrollbar-width: thin;
+  overflow-y: hidden;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 body::-webkit-scrollbar-track {
@@ -445,6 +447,9 @@ video {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    overflow-y: visible;
+  }
   nav .logo {
     float: none;
     width: auto;
@@ -640,7 +645,6 @@ video {
     width: 80%;
     height: 40%;
   }
-
   .container {
     width: 80%;
     display: block;
