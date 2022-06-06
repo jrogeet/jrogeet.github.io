@@ -459,11 +459,12 @@ video {
     z-index: 11;
   }
   nav .logo {
+    position: fixed;
     float: none;
     width: auto;
     justify-content: center;
-    z-index: 11;
-    margin-left: -3%;
+    z-index: 12;
+    margin-left: -1.6%;
   }
   nav .links {
     display: flex;
@@ -471,9 +472,10 @@ video {
     text-align: center;
     position: fixed;
     z-index: 9;
-    left: -5%;
+    left: -7%;
     right: 0;
-    top: 100px;
+    top: 0px;
+    padding-top: 9.5%;
     bottom: 100%;
     width: auto;
     height: auto;
@@ -486,7 +488,7 @@ video {
     z-index: 11;
   }
   nav .links a {
-    font-size: 140%;
+    font-size: 130%;
   }
   nav :checked ~ .links {
     bottom: 0;
@@ -495,6 +497,7 @@ video {
     display: block;
     top: 7%;
     max-width: 90%;
+    z-index: 20;
   }
   nav :checked ~ .icon-burger .line:nth-child(1) {
     transform: translateY(10px) rotate(225deg);
