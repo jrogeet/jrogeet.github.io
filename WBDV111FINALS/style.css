@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: lemonmilk;
-  src: url(fonts/LEMONMILK-Regular.otf);
+  src: url(fonts/LEMONMILKRegular.otf);
 }
 @font-face {
   font-family: bebas;
-  src: url(fonts/BebasNeue-Regular.otf);
+  src: url(fonts/BebasNeueRegular.otf);
 }
 @font-face {
   font-family: dalek;
@@ -16,11 +16,11 @@
 }
 @font-face {
   font-family: monbold;
-  src: url(fonts/MonumentExtended-Ultrabold.otf);
+  src: url(fonts/MonumentExtendedUltrabold.otf);
 }
 @font-face {
   font-family: monreg;
-  src: url(fonts/MonumentExtended-Regular.otf);
+  src: url(fonts/MonumentExtendedRegular.otf);
 }
 @font-face {
   font-family: tsblock;
